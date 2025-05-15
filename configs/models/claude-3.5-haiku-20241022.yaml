@@ -1,0 +1,5 @@
+anthropic_model: claude-3-5-haiku-20241022
+gcp_model: publishers/anthropic/models/claude-3-5-haiku
+aws_model: anthropic.claude-3-5-haiku-20241022-v1:0
+model_type: aws/gcp
+max_tokens: 200000

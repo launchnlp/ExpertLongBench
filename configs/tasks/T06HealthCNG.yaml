@@ -1,0 +1,4 @@
+system_prompt: |
+  Summarize the conversation to generate a clinical note with four sections: HISTORY OF PRESENT ILLNESS, PHYSICAL EXAM, RESULTS, ASSESSMENT AND PLAN.
+  The conversation is:
+max_output_tokens: 2048

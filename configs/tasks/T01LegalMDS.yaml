@@ -1,0 +1,4 @@
+system_prompt: |
+  Generate a clear and legally precise summary of a multiple-document legal case. Focus on capturing key facts, procedural history, and significant rulings in a way that is easy to understand. Provide enough detail to convey the case's development and outcome without being excessively long or overly detailed.
+  These are the case documents:
+max_output_tokens: 6144
