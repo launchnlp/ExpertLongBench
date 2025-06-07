@@ -1,0 +1,40 @@
+{
+    "instruction": "You are judging whether a model has generated an answer consistent with the ground truth.  An model’s answer will be longer and can be considered correct if it contains the semantic content of short reference answer somewhere within it. Don’t worry about factuality with respect to the real world, just judge the example based on what you see. No need to overthink this task, it really comes down to just soft matching. Answer with only the word ’Yes’ or ’No’",
+    "examples": [
+        {
+            "reference": "Dates of All Decrees: May 8, 2015; June 8, 2015; June 30, 2015; October 7, 2015; October 15, 2015; October 20, 2015; April 12, 2017; May 10, 2017; June 26, 2017; June 27, 2017; July 26, 2017; September 21, 2017; October 3, 2017; April 1, 2018; 2018; April 1, 2019",
+            "answer": "Dates of All Decrees: October 15, 2014; May 8, 2015; June 8, 2015; June 30, 2015; October 7, 2015; October 15, 2015; October 20, 2015; July 11, 2016; April 12, 2017; May 10, 2017; June 26, 2017; June 27, 2017; July 26, 2017; September 21, 2017; October 3, 2017; April 1, 2018; April 1, 2019",
+            "label": "Yes"
+        },
+        {
+            "reference": "Dates of All Decrees: October 15, 2014; May 8, 2015; June 8, 2015; June 30, 2015; October 7, 2015; October 15, 2015; October 20, 2015; July 11, 2016; April 12, 2017; May 10, 2017; June 26, 2017; June 27, 2017; July 26, 2017; September 21, 2017; October 3, 2017; April 1, 2018; April 1, 2019",
+            "answer": "Dates of All Decrees: May 8, 2015; June 8, 2015; June 30, 2015; October 7, 2015; October 15, 2015; October 20, 2015; April 12, 2017; May 10, 2017; June 26, 2017; June 27, 2017; July 26, 2017; September 21, 2017; October 3, 2017; April 1, 2018; 2018; April 1, 2019",
+            "label": "No"
+        },
+        {
+            "reference": "Remedy Sought: injunction to stop the smoking at Crossroads and other correctional centers, as well as prohibiting the sale of tobacco products in prisons",
+            "answer": "Remedy Sought: Injunction to stop smoking and prohibit the sale of tobacco products in prisons",
+            "label": "Yes"
+        },
+        {
+            "reference": "Factual Basis of Case: The case involves a plaintiff, an inmate at Crossroads Correctional Center, who filed a complaint on October 15, 2014, under 42 U.S.C. §1983 against prison administrators for violating his Eighth Amendment rights. The plaintiff alleged that he was forced to inhale second-hand cigarette smoke, which jeopardized his health and aggravated his asthma. He claimed that prison staff acted with deliberate indifference to the dangers of cigarette smoke and encouraged smoking by selling large amounts of cigarettes to inmates. The prison had a policy against indoor smoking, but it was rarely enforced. The plaintiff sought an injunction to stop smoking in correctional centers and prohibit the sale of tobacco products in prisons. Evidence included the plaintiff's eight grievances detailing his health suffering, which were ignored by the defendants.",
+            "answer": "Factual Basis of Case: The case involves an inmate at Crossroads Correctional Center who alleged that he was forced to inhale second-hand cigarette smoke, which jeopardized his health and aggravated his asthma, supported by evidence of the prison's policy against indoor smoking and the plaintiff's previous grievances, with background information such as the prison staff's deliberate indifference to the dangers of cigarette smoke.",
+            "label": "No"
+        },
+        {
+            "reference": "Diagnosis and Clinical Impression: Lupus: This has been stable and asymptomatic for the past year, but the patient reports increased joint pain and inflammation in his bilateral knees lately. His recent knee x-ray was unremarkable, so I am concerned that this is a lupus flare. Coronary artery disease: He is asymptomatic at this time. He has discontinued Plavix but continues with daily aspirin and Crestor. His recent EKG was unremarkable.",
+            "answer": "Diagnosis and Clinical Impression: Lupus flare, coronary artery disease",
+            "label": "No"
+        },
+        {
+            "reference": "chemical compound classifications: a member of pyrimidines, a sulfonamide, a substituted aniline and a sulfonamide antibiotic",
+            "answer": "chemical compound classifications: pyrimidines, a sulfonamide, a substituted aniline and a sulfonamide antibiotic",
+            "label": "Yes"
+        },
+        {
+            "reference": "Interactions: The cofactor required for its activity is Mg(2+). This protein contains an RNase III domain and a DRBM domain, which are significant for its function, and has binding sites located at positions 46, 126, and 129 for liganding Mg(2+), with active sites located at positions 50 and 129 for its catalytic activity.",
+            "answer": "Interactions: The cofactor required for its activity is Mg(2+), and it has binding sites located at positions 46, 126, and 129 for liganding Mg(2+), with active sites located at positions 50 and 129 for its catalytic activity.",
+            "label": "Yes"
+        }
+    ]
+}
