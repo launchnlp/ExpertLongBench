@@ -16,7 +16,9 @@ In addition, for running proprietary models, we require the following environmen
 
 ### Prepare Data
 
-Our data contains private samples. Please contact the authors for obtaining data. The data should be placed inside `exp/data`. Create the folder if it does not exist.
+Our data contains public and private samples. We recommend starting with the public set for initial testing and development. You're welcome to submit your model for evaluation on the private set — just make sure to include your results on the public set. Refer to the [ExpertLongBench page](https://huggingface.co/spaces/launch/ExpertLongBench) for model submission details.
+
+The data should be placed inside `exp/data`. Create the folder if it does not exist.
 
 ```
 ./shell_scripts/create_task_output_requests.sh
