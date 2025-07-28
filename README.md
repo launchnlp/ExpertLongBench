@@ -55,7 +55,7 @@ The first step is to generate a request file that can be used by the model infer
 ```
 python extraction/checklist_mapper_request.py \
     --model_output <Path to the model output for a particular model and a task generated in the previous step> \
-    --task_name <Task ID of the model output (e.g., "T1LegalMDS")> \
+    --task_name <Task ID of the model output (e.g., "T01LegalMDS")> \
     --output_file <Path to the output file where the request will be saved>
 ```
 
