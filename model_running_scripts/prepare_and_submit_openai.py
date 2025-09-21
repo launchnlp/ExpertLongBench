@@ -25,6 +25,7 @@ class Example:
 
 
 def truncate_input(input_text, max_tokens, tokenizer):
+    input_text = str(input_text)
     input_tokens = tokenizer.encode(input_text)
     return tokenizer.decode(input_tokens[:max_tokens])
 
