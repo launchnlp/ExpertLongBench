@@ -24,6 +24,7 @@ class Example:
 
 
 def truncate_input(input_text, max_tokens, tokenizer):
+    input_text = str(input_text)  # Ensure input_text is a string
     input_tokens = tokenizer(input_text, truncation=True, max_length=max_tokens, add_special_tokens=False)
     return tokenizer.decode(input_tokens["input_ids"], skip_special_tokens=True)
 
